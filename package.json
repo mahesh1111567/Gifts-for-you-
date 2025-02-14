@@ -1,0 +1,32 @@
+{
+  "name": "trackdown-bot",
+  "version": "1.0.0",
+  "description": "Telegram tracking link generator bot with location and device information gathering capabilities",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Th30neAnd0nly/TrackDown"
+  },
+  "keywords": [
+    "telegram-bot",
+    "tracking",
+    "security"
+  ],
+  "author": "Th30neAnd0nly",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "node-fetch": "^2.6.11",
+    "node-telegram-bot-api": "^0.61.0",
+    "ejs": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
