@@ -4,6 +4,11 @@ const cors = require('cors');
 const { Buffer } = require('buffer');
 const fetch = require('node-fetch');
 const TelegramBot = require('node-telegram-bot-api');
+const path = require('path');
+
+// Add this after initializing Express app
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 // Environment Configuration
 const PORT = process.env.PORT || 5000;
