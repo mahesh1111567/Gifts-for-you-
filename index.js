@@ -6,9 +6,7 @@ const fetch = require('node-fetch');
 const TelegramBot = require('node-telegram-bot-api');
 const path = require('path');
 
-// Add this after initializing Express app
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+
 
 // Environment Configuration
 const PORT = process.env.PORT || 5000;
@@ -27,6 +25,9 @@ app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 app.use(cors());
 app.set('view engine', 'ejs');
+// Add this after initializing Express app
+app.set('views', path.join(__dirname, 'views'));
+//app.set('view engine', 'ejs');
 
 // Initialize Telegram Bot
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
